@@ -1,7 +1,3 @@
-Для вашего Endterm Project файл README.md — это не просто описание, а лицо проекта, за которое выставляются баллы (пункт №6 задания). Он должен быть на английском языке и содержать четкие инструкции.
-
-Вот готовый шаблон, адаптированный под ваш проект Car Rental System:
-
 Car Rental Management System (Spring Boot API)
 Project Overview
 This is a RESTful API for a Car Rental System developed as an Endterm project. The application allows managing a vehicle fleet (Standard and Luxury cars) and processing customer reservations with dynamic price calculation.
