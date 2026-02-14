@@ -47,7 +47,7 @@ Wait for Maven to download dependencies.
 
 Run the RentalApplication.java file.
 
-The server will start on: http://localhost:8081
+The server will start on: http://localhost:8082
 
 API Endpoints
 Vehicles
@@ -55,10 +55,10 @@ Reservations
 Database Console
 You can access the H2 database console to view tables:
 
-URL: http://localhost:8081/h2-console
+URL: http://localhost:8082/h2-console
 
 JDBC URL: jdbc:h2:mem:rentaldb
 
 User: POSTGRES
 
-Password: (empty)
+Password: postgres
