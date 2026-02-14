@@ -1,3 +1,6 @@
+**I rewrote classes for additional tasks and yet still used port 8082 since 8081 and 8080 both are already taken by other configurations. All the screenshots are in src/docs and named as "Attention Task", I did soft delete for models and worked with postman. I also used single table(class ierarchy) and demonstrated all them in the given screenshots** 
+
+
 Car Rental Management System (Spring Boot API)
 Project Overview
 This is a RESTful API for a Car Rental System developed as an Endterm project. The application allows managing a vehicle fleet (Standard and Luxury cars) and processing customer reservations with dynamic price calculation.
