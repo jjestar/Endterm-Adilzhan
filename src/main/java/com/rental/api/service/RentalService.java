@@ -40,15 +40,14 @@ public class RentalService {
     }
 
     public void deleteVehicle(Long id) {
-        if (!vehicleRepository.existsById(id)) {
-            throw new ResourceNotFoundException("Vehicle not found");
-        }
-        vehicleRepository.deleteById(id);
+        Vehicle vehicle = vehicleRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Vehicle not found or already deleted"));
+        vehicleRepository.delete(vehicle);
     }
 
     public Reservation createReservation(ReservationRequestDTO dto) {
         Vehicle vehicle = vehicleRepository.findById(dto.getVehicleId())
-                .orElseThrow(() -> new ResourceNotFoundException("Vehicle not found"));
+                .orElseThrow(() -> new ResourceNotFoundException("Vehicle not available for reservation"));
 
         Reservation.Builder builder = new Reservation.Builder()
                 .client(dto.getClientName())
